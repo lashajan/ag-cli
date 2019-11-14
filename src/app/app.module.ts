@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { XyzComponent } from './xyz/xyz.component';
 import { HeroComponent } from './hero/hero.component';
+import { HeroModule } from './hero/hero.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeroComponent } from './hero/hero.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HeroModule
   ],
   providers: [],
   bootstrap: [AppComponent]
